@@ -1,0 +1,47 @@
+#app {
+    display: grid;
+    grid-template-columns: 31.25% 69.75%;
+    height: 100vh;
+    overflow: hidden;
+
+    gap: 1.25rem;
+  }
+
+main {
+    max-width: 51.25rem;
+    padding-block: 5rem;
+    background-color: var(--shape-body);
+    border-radius: .75rem;
+
+    .main-container {
+        max-width: 35rem;
+        margin-inline: auto;
+    }
+}
+
+aside {
+    max-width: 25rem;
+    margin-left: auto;
+    max-height: 45.5rem;
+
+    background-image: url(../assets/images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: .75rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+
+    .logo {
+        max-width: 3rem;
+        margin-bottom: .75rem;
+    }
+
+    h1 {
+        font: var(--font-logo);
+        color: var(--accent-pink);
+    }
+}

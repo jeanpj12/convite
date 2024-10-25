@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
 :root {
     /* Brand Colors */
     --brand-light: #59B2FF;
@@ -42,4 +49,11 @@
     --font-body-sm: 600 14px/normal 'Open Sans', sans-serif;
     --font-body-xs: 600 12px/normal 'Open Sans', sans-serif;
   }
-  
+
+  body {
+    overflow: hidden;
+    font: var(--font-body-sm);
+    background-color: var(--shape-background);
+    color: var(--text-body);
+    padding: 1.25rem;
+  }
