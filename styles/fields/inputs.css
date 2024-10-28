@@ -18,6 +18,14 @@ input, textarea {
     }
 }
 
+input[type="date"]{
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+}
+
 
 label {
     font: var(--font-body-md);
