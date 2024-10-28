@@ -43,3 +43,90 @@
     }
   }
 }
+
+.radio-color-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+ 
+
+    .radio-color-inner {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 20rem;
+        background-color: var(--shape-button);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        padding: .30rem;
+
+        input,
+        input:focus,
+        input:hover {
+          all: unset;
+          position: absolute;
+          inset: 0;
+        }
+
+        &:focus-within {
+              outline: 2px solid var(--brand-dark);
+          }
+
+        .radio-color {
+            background-color: var(--text-body);
+            width: 100%;
+            height: 100%;
+            border-radius: 20rem;
+
+        }
+
+        #light-blue {
+            background-color: var(--brand-light);
+        }
+
+        #dark-blue {
+            background-color: var(--brand-dark);
+        }
+
+        #dark-purple {
+            background-color: var(--accent-purple);
+        }
+
+        #light-purple {
+            background-color: var(--accent-fuschia);
+        }
+
+        #red {
+            background-color: var(--accent-pink);
+        }
+
+        #yellow {
+            background-color: var(--accent-yellow);
+        }
+
+        #flourescent-yellow {
+            background-color: var(--accent-lime);
+        }
+
+        #green {
+            background-color: var(--accent-green);
+        }
+
+        #flourescent-blue {
+            background-color: var(--accent-cyan);
+        }
+
+        #dark-orange {
+            background-color: var(--accent-cyan);
+        }
+
+        #light-orange{
+            background-color: var(--accent-orange);
+        }
+
+
+
+    }
+
+}
