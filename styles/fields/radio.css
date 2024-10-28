@@ -1,3 +1,7 @@
+label:has(+ input[type="radio"]) {
+    margin: 0;
+}
+
 .radio-type-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -30,103 +34,139 @@
       inset: 0;
     }
 
-    label {
-      margin: 0;
-    }
-
     &:has(:checked) {
       background-color: var(--shape-button);
     }
 
-    &:hover, &:focus-within {
-        outline: 2px solid var(--brand-dark);
+    &:hover,
+    &:focus-within {
+      outline: 2px solid var(--brand-dark);
     }
   }
 }
 
 .radio-color-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 1rem;
- 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
 
-    .radio-color-inner {
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 20rem;
-        background-color: var(--shape-button);
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-        padding: .30rem;
+  .radio-color-inner {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 20rem;
+    background-color: var(--shape-button);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 0.3rem;
 
-        input,
-        input:focus,
-        input:hover {
-          all: unset;
-          position: absolute;
-          inset: 0;
-        }
-
-        &:focus-within {
-              outline: 2px solid var(--brand-dark);
-          }
-
-        .radio-color {
-            background-color: var(--text-body);
-            width: 100%;
-            height: 100%;
-            border-radius: 20rem;
-
-        }
-
-        #light-blue {
-            background-color: var(--brand-light);
-        }
-
-        #dark-blue {
-            background-color: var(--brand-dark);
-        }
-
-        #dark-purple {
-            background-color: var(--accent-purple);
-        }
-
-        #light-purple {
-            background-color: var(--accent-fuschia);
-        }
-
-        #red {
-            background-color: var(--accent-pink);
-        }
-
-        #yellow {
-            background-color: var(--accent-yellow);
-        }
-
-        #flourescent-yellow {
-            background-color: var(--accent-lime);
-        }
-
-        #green {
-            background-color: var(--accent-green);
-        }
-
-        #flourescent-blue {
-            background-color: var(--accent-cyan);
-        }
-
-        #dark-orange {
-            background-color: var(--accent-cyan);
-        }
-
-        #light-orange{
-            background-color: var(--accent-orange);
-        }
-
-
-
+    input,
+    input:focus,
+    input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
     }
 
+    &:focus-within {
+      outline: 2px solid var(--brand-dark);
+    }
+
+    .radio-color {
+      background-color: var(--text-body);
+      width: 100%;
+      height: 100%;
+      border-radius: 20rem;
+    }
+
+    #light-blue {
+      background-color: var(--brand-light);
+    }
+
+    #dark-blue {
+      background-color: var(--brand-dark);
+    }
+
+    #dark-purple {
+      background-color: var(--accent-purple);
+    }
+
+    #light-purple {
+      background-color: var(--accent-fuschia);
+    }
+
+    #red {
+      background-color: var(--accent-pink);
+    }
+
+    #yellow {
+      background-color: var(--accent-yellow);
+    }
+
+    #flourescent-yellow {
+      background-color: var(--accent-lime);
+    }
+
+    #green {
+      background-color: var(--accent-green);
+    }
+
+    #flourescent-blue {
+      background-color: var(--accent-cyan);
+    }
+
+    #dark-orange {
+      background-color: var(--accent-cyan);
+    }
+
+    #light-orange {
+      background-color: var(--accent-orange);
+    }
+  }
+}
+
+.radio-theme-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  gap: 1rem;
+
+  .radio-theme-inner {
+    background-color: var(--shape-button);
+    padding: .25rem .25rem .5rem .25rem;
+    border-radius: 0.5rem;
+    outline: 1px solid var(--input-stroke);
+    border: 2px solid transparent;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .imagem-theme {
+        height: 4rem;
+        width: 100%;
+        background-color: var(--text-body);
+        border-radius: .25rem;
+    }
+
+    input,
+    input:focus,
+    input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    &:has(:checked) {
+        outline: 2px solid var(--brand-dark);
+        }
+
+    &:hover,
+    &:focus-within {
+      outline: 2px solid var(--brand-dark);
+    }
+  }
 }
