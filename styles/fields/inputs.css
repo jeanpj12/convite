@@ -1,0 +1,30 @@
+input, textarea {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    outline: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--text-body);
+    border: 2px solid transparent;
+    padding: .75rem 1rem;
+    font: var(--text-body);
+
+    &::placeholder {
+        color: var(--input-placeholder);
+    }
+
+    &:focus {
+        border-color: var(--brand-dark);
+    }
+}
+
+
+label {
+    font: var(--font-body-md);
+    display: block;
+    margin-bottom: .75rem;
+}
+
+.flex {
+    gap: 1rem;
+}

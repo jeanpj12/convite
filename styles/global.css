@@ -42,12 +42,13 @@
 
     /*Tipografy*/
 
-    --font-logo: 400 40px/normal 'Leckerli One', cursive;
-    --font-heading-md: 700 28px/normal 'Baloo 2', sans-serif;
-    --font-heading-sm: 700 18px/normal 'Baloo 2', sans-serif;
-    --font-body-md: 600 16px/normal 'Open Sans', sans-serif;
-    --font-body-sm: 600 14px/normal 'Open Sans', sans-serif;
-    --font-body-xs: 600 12px/normal 'Open Sans', sans-serif;
+    --font-logo: 400 2.5rem/normal 'Leckerli One', cursive;
+    --font-heading-md: 700 1.75rem/normal 'Baloo 2', sans-serif;
+    --font-heading-sm: 700 1.125rem/normal 'Baloo 2', sans-serif;
+    --font-body-md: 600 1rem/normal 'Open Sans', sans-serif;
+    --font-body-sm: 600 0.875rem/normal 'Open Sans', sans-serif;
+    --font-body-xs: 600 0.75rem/normal 'Open Sans', sans-serif;
+    
   }
 
   body {
@@ -56,4 +57,12 @@
     background-color: var(--shape-background);
     color: var(--text-body);
     padding: 1.25rem;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-1 {
+    flex: 1;
   }
