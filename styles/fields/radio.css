@@ -69,6 +69,10 @@ label:has(+ input[type="radio"]) {
       inset: 0;
     }
 
+    &:has(:checked) {
+      outline: 2px solid var(--brand-dark);
+      }
+
     &:focus-within {
       outline: 2px solid var(--brand-dark);
     }

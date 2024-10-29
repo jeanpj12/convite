@@ -26,7 +26,6 @@ input[type="date"]{
     }
 }
 
-
 label {
     font: var(--font-body-md);
     display: block;
@@ -35,4 +34,16 @@ label {
 
 .flex {
     gap: 1rem;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.input-wrapper > label {
+    margin-top: 1rem;
 }

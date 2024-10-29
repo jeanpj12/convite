@@ -106,7 +106,7 @@
               </legend>
               <div class="input-wrapper">
                 <label>Cor principal</label>
-                <div class="radio-color-wrapper">
+                <div class="radio-color-wrapper radio-wrapper">
                   <div class="radio-color-inner">
                     <div class="radio-color" id="light-blue"></div>
                     <input
@@ -344,20 +344,28 @@
               </div>
 
               <div class="flex">
-                <div class="switch-wrapper flex-1">
+                <div class="switch-wrapper flex-1 input-wrapper">
                   <label>Estilo</label>
                   <div class="switcher">
-                  <label class="switch">
-                    <input type="checkbox" id="style"/>
-                    <span class="slider"></span>
-                  </label>
-                  <label for="style">Escuro</label>
-                </div>
+                    <label class="switch">
+                      <input type="checkbox" id="style" />
+                      <span class="slider"></span>
+                    </label>
+                    <label for="style">Escuro</label>
+                  </div>
                 </div>
 
-                <div class="droparea-wrapper flex-2">
+                <div class="droparea-wrapper flex-2 input-wrapper">
                   <label>Foto de capa</label>
-                  <input type="file" name="droparea" id="droparea" />
+                  <div class="droparea-inner">
+                    <input type="file" name="droparea" id="droparea" />
+                    <button>
+                      <img src="./assets/icons/upload.svg" alt="" />
+                      Selecionar
+                    </button>
+
+                    <span>Nenhum arquivo selecionado</span>
+                  </div>
                 </div>
               </div>
             </fieldset>
