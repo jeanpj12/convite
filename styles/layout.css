@@ -1,9 +1,8 @@
 #app {
     display: grid;
     grid-template-columns: 31.25% 69.75%;
-    height: 100vh;
+    height: calc(100vh - 2rem);
     overflow: hidden;
-
     gap: 1.25rem;
   }
 

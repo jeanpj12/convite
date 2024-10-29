@@ -1,0 +1,17 @@
+.actions-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+    button {
+        cursor: pointer;
+        background-color: var(--brand-light);
+        border: none;
+        padding: .75rem 1.5rem;
+        color: var(--text-heading);
+        font: var(--font-body-md);
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        border-radius: .5rem;
+    }
+}
